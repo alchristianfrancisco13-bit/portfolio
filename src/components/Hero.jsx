@@ -9,10 +9,10 @@ const Hero = () => {
           <h2 className="greeting">Hello, I'm</h2>
           <h1 className="name">Al Christian</h1>
           <h1 className="surname gradient-text">V. Francisco</h1>
-          <h3 className="role">Professional Web Developer</h3>
+          <h3 className="role">Aspiring Web Developer</h3>
           <p className="bio">
-            I craft responsive, modern, and user-centric web experiences. 
-            Transforming ideas into elegant, state-of-the-art digital realities.
+            I am a passionate aspiring developer crafting responsive, modern, and user-centric web experiences. 
+            Eager to learn, grow, and transform ideas into elegant digital realities.
           </p>
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">View My Work</a>
@@ -35,8 +35,8 @@ const Hero = () => {
                  <code>
 <span style={{color: 'var(--primary)'}}>const</span> developer = {'{'}
 <br/>  name: <span style={{color: "var(--secondary)"}}>'Al Christian V. Francisco'</span>,
-<br/>  role: <span style={{color: "var(--secondary)"}}>'Web Developer'</span>,
-<br/>  skills: [<span style={{color: "var(--secondary)"}}>'React'</span>, <span style={{color: "var(--secondary)"}}>'Vite'</span>, <span style={{color: "var(--secondary)"}}>'Node.js'</span>],
+<br/>  role: <span style={{color: "var(--secondary)"}}>'Aspiring Web Developer'</span>,
+<br/>  skills: [<span style={{color: "var(--secondary)"}}>'React'</span>, <span style={{color: "var(--secondary)"}}>'Node.js'</span>, <span style={{color: "var(--secondary)"}}>'Java'</span>],
 <br/>  isCreative: <span style={{color: 'var(--primary)'}}>true</span>
 <br/>{'}'};
                  </code>

@@ -38,14 +38,14 @@ const About = () => {
         </div>
         <div className="about-text">
           <h3 style={{fontSize: '2rem', marginBottom: '1rem'}}>
-             Passionate about <span className="gradient-text">Web Technologies</span>
+             An Aspiring Developer Passionate about <span className="gradient-text">Web Technologies</span>
           </h3>
           <p style={{color: 'var(--text-muted)', marginBottom: '1rem'}}>
-            I am Al Christian V. Francisco, a dedicated Web Developer with a keen eye for aesthetics and performance. 
-            I specialize in building dynamic, full-stack applications and creating intuitive user interfaces.
+            I am Al Christian V. Francisco, an aspiring Web Developer with a keen eye for modern design and performance. 
+            I am currently honing my skills in building dynamic applications and creating intuitive user interfaces.
           </p>
           <p style={{color: 'var(--text-muted)', marginBottom: '2rem'}}>
-            My approach blends creativity with technical excellence, ensuring that every project I touch is not only visually stunning but also technically robust. Always eager to learn the latest stack and implement best practices.
+            As an aspiring developer, my approach blends creativity with a strong desire to learn and achieve technical excellence. I am always eager to dive into the latest technologies, adopt best practices, and contribute to impactful projects.
           </p>
           <div className="stats grid grid-2">
             <div className="stat-card glass" style={{padding: '1.5rem', textAlign: 'center', borderRadius: '15px'}}>
