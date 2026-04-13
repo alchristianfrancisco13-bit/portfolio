@@ -59,6 +59,57 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <div className="education-section" style={{marginTop: '5rem'}}>
+        <h3 className="section-title">Education</h3>
+        <div className="education-list" style={{display: 'flex', flexDirection: 'column', gap: '1.5rem', marginTop: '2rem'}}>
+          
+          <div className="education-item glass" style={{display: 'flex', padding: '1.5rem', borderRadius: '15px', gap: '2rem', flexWrap: 'wrap', alignItems: 'center'}}>
+            <div className="edu-left" style={{flex: '1', minWidth: '200px'}}>
+              <h4 style={{color: 'var(--primary)', marginBottom: '0.5rem', fontSize: '1.1rem'}}>2009 &ndash; 2015</h4>
+              <p style={{color: 'var(--text-muted)'}}>Upig, San Ildefonso<br/>Bulacan</p>
+            </div>
+            <div className="edu-right" style={{flex: '2', minWidth: '300px'}}>
+              <h4 style={{fontSize: '1.3rem', marginBottom: '0.5rem'}}>Elementary</h4>
+              <p style={{color: 'var(--text-color)'}}>Upig Elementary School</p>
+            </div>
+          </div>
+          
+          <div className="education-item glass" style={{display: 'flex', padding: '1.5rem', borderRadius: '15px', gap: '2rem', flexWrap: 'wrap', alignItems: 'center'}}>
+            <div className="edu-left" style={{flex: '1', minWidth: '200px'}}>
+              <h4 style={{color: 'var(--primary)', marginBottom: '0.5rem', fontSize: '1.1rem'}}>2015 &ndash; 2019</h4>
+              <p style={{color: 'var(--text-muted)'}}>Salapungan, San Rafael<br/>Bulacan</p>
+            </div>
+            <div className="edu-right" style={{flex: '2', minWidth: '300px'}}>
+              <h4 style={{fontSize: '1.3rem', marginBottom: '0.5rem'}}>Highschool</h4>
+              <p style={{color: 'var(--text-color)'}}>Salapungan National Highschool</p>
+            </div>
+          </div>
+          
+          <div className="education-item glass" style={{display: 'flex', padding: '1.5rem', borderRadius: '15px', gap: '2rem', flexWrap: 'wrap', alignItems: 'center'}}>
+            <div className="edu-left" style={{flex: '1', minWidth: '200px'}}>
+              <h4 style={{color: 'var(--primary)', marginBottom: '0.5rem', fontSize: '1.1rem'}}>2019 &ndash; 2021</h4>
+              <p style={{color: 'var(--text-muted)'}}>Salapungan, San Rafael<br/>Bulacan</p>
+            </div>
+            <div className="edu-right" style={{flex: '2', minWidth: '300px'}}>
+              <h4 style={{fontSize: '1.3rem', marginBottom: '0.5rem'}}>Senior Highschool</h4>
+              <p style={{color: 'var(--text-color)'}}>Salapungan National Highschool<br/><span style={{color: 'var(--text-muted)'}}>Academic Track - General Academic Strand</span></p>
+            </div>
+          </div>
+          
+          <div className="education-item glass" style={{display: 'flex', padding: '1.5rem', borderRadius: '15px', gap: '2rem', flexWrap: 'wrap', alignItems: 'center'}}>
+            <div className="edu-left" style={{flex: '1', minWidth: '200px'}}>
+              <h4 style={{color: 'var(--primary)', marginBottom: '0.5rem', fontSize: '1.1rem'}}>2023 &ndash; Present</h4>
+              <p style={{color: 'var(--text-muted)'}}>Bustos, Bulacan</p>
+            </div>
+            <div className="edu-right" style={{flex: '2', minWidth: '300px'}}>
+              <h4 style={{fontSize: '1.3rem', marginBottom: '0.5rem'}}>College</h4>
+              <p style={{color: 'var(--text-color)'}}>Bulacan State University - Bustos Campus<br/><span style={{color: 'var(--text-muted)'}}>Bachelor of Science in Information Technology Major in Web and Mobile Application Development</span></p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </section>
   );
 };
