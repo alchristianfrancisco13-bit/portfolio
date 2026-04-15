@@ -9,9 +9,9 @@ const Hero = () => {
           <h2 className="greeting">Hello, I'm</h2>
           <h1 className="name">Al Christian</h1>
           <h1 className="surname gradient-text">V. Francisco</h1>
-          <h3 className="role">Aspiring Web Developer</h3>
+          <h3 className="role">Web Developer</h3>
           <p className="bio">
-            I am a passionate aspiring developer crafting responsive, modern, and user-centric web experiences. 
+            I am a passionate developer crafting responsive, modern, and user-centric web experiences. 
             Eager to learn, grow, and transform ideas into elegant digital realities.
           </p>
           <div className="hero-cta">
@@ -35,7 +35,7 @@ const Hero = () => {
                  <code>
 <span style={{color: 'var(--primary)'}}>const</span> developer = {'{'}
 <br/>  name: <span style={{color: "var(--secondary)"}}>'Al Christian V. Francisco'</span>,
-<br/>  role: <span style={{color: "var(--secondary)"}}>'Aspiring Web Developer'</span>,
+<br/>  role: <span style={{color: "var(--secondary)"}}>'Web Developer'</span>,
 <br/>  skills: [<span style={{color: "var(--secondary)"}}>'React'</span>, <span style={{color: "var(--secondary)"}}>'Node.js'</span>, <span style={{color: "var(--secondary)"}}>'Java'</span>],
 <br/>  isCreative: <span style={{color: 'var(--primary)'}}>true</span>
 <br/>{'}'};
