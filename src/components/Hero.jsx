@@ -10,7 +10,7 @@ const Hero = () => {
           <h1 className="name">Al Christian</h1>
           <h1 className="surname gradient-text">V. Francisco</h1>
           <h3 className="role">
-            Front-End Developer <span className="vibe-badge">⚡ Vibe Coder</span>
+            Front-End Developer <span style={{ color: 'var(--text-muted)', fontSize: '1.05rem', fontWeight: '400' }}>• Web Developer Intern</span> <span className="vibe-badge">⚡ Vibe Coder</span>
           </h3>
           <p className="bio">
             Crafting fluid, interactive, and visually captivating front-end experiences through 

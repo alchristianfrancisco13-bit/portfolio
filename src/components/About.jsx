@@ -41,7 +41,7 @@ const About = () => {
             Front-End Developer Driven by <span className="gradient-text">Modern UI & Vibe Coding</span>
           </h3>
           <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
-            I am <strong>Al Christian V. Francisco</strong>, a Front-End Developer dedicated to creating aesthetic, high-performance web applications and intuitive user interfaces.
+            I am <strong>Al Christian V. Francisco</strong>, a <strong>Web Developer Intern & Front-End Developer</strong> dedicated to creating aesthetic, high-performance web applications and intuitive user interfaces.
           </p>
           <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>
             I focus heavily on <strong>front-end architecture</strong> and embrace <strong>Vibe Coding</strong> — an agile, flow-state approach to development that leverages modern AI-assisted workflows to rapidly prototype, iterate, and deliver polished digital products with precision.
