@@ -38,14 +38,13 @@ const About = () => {
         </div>
         <div className="about-text">
           <h3 style={{ fontSize: '2rem', marginBottom: '1rem' }}>
-            An Developer Passionate about <span className="gradient-text">Web Technologies</span>
+            Front-End Developer Driven by <span className="gradient-text">Modern UI & Vibe Coding</span>
           </h3>
           <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
-            I am Al Christian V. Francisco, an Web Developer with a keen eye for modern design and performance.
-            I am currently honing my skills in building dynamic applications and creating intuitive user interfaces.
+            I am <strong>Al Christian V. Francisco</strong>, a Front-End Developer dedicated to creating aesthetic, high-performance web applications and intuitive user interfaces.
           </p>
           <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>
-            As an developer, my approach blends creativity with a strong desire to learn and achieve technical excellence. I am always eager to dive into the latest technologies, adopt best practices, and contribute to impactful projects.
+            I focus heavily on <strong>front-end architecture</strong> and embrace <strong>Vibe Coding</strong> — an agile, flow-state approach to development that leverages modern AI-assisted workflows to rapidly prototype, iterate, and deliver polished digital products with precision.
           </p>
           <div className="stats grid grid-2">
             <div className="stat-card glass" style={{ padding: '1.5rem', textAlign: 'center', borderRadius: '15px' }}>
@@ -53,8 +52,8 @@ const About = () => {
               <p>Projects Completed</p>
             </div>
             <div className="stat-card glass" style={{ padding: '1.5rem', textAlign: 'center', borderRadius: '15px' }}>
-              <h4 style={{ fontSize: '2.5rem', color: 'var(--secondary)' }}>24/7</h4>
-              <p>Passion for Coding</p>
+              <h4 style={{ fontSize: '2.5rem', color: 'var(--secondary)' }}>⚡ Flow</h4>
+              <p>Vibe Coding & Rapid Dev</p>
             </div>
           </div>
         </div>

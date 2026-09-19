@@ -9,10 +9,12 @@ const Hero = () => {
           <h2 className="greeting">Hello, I'm</h2>
           <h1 className="name">Al Christian</h1>
           <h1 className="surname gradient-text">V. Francisco</h1>
-          <h3 className="role">Web Developer</h3>
+          <h3 className="role">
+            Front-End Developer <span className="vibe-badge">⚡ Vibe Coder</span>
+          </h3>
           <p className="bio">
-            I am a passionate developer crafting responsive, modern, and user-centric web experiences. 
-            Eager to learn, grow, and transform ideas into elegant digital realities.
+            Crafting fluid, interactive, and visually captivating front-end experiences through 
+            <strong> Vibe Coding</strong> — blending modern UI design, clean code, and AI-augmented rapid prototyping.
           </p>
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">View My Work</a>
@@ -50,9 +52,10 @@ const Hero = () => {
                  <code>
 <span style={{color: 'var(--primary)'}}>const</span> developer = {'{'}
 <br/>  name: <span style={{color: "var(--secondary)"}}>'Al Christian V. Francisco'</span>,
-<br/>  role: <span style={{color: "var(--secondary)"}}>'Web Developer'</span>,
-<br/>  skills: [<span style={{color: "var(--secondary)"}}>'React'</span>, <span style={{color: "var(--secondary)"}}>'Python'</span>, <span style={{color: "var(--secondary)"}}>'Cisco'</span>, <span style={{color: "var(--secondary)"}}>'Java'</span>],
-<br/>  isCreative: <span style={{color: 'var(--primary)'}}>true</span>
+<br/>  role: <span style={{color: "var(--secondary)"}}>'Front-End Developer'</span>,
+<br/>  methodology: <span style={{color: "var(--primary)"}}>'Vibe Coding'</span>,
+<br/>  focus: [<span style={{color: "var(--secondary)"}}>'React'</span>, <span style={{color: "var(--secondary)"}}>'UI/UX'</span>, <span style={{color: "var(--secondary)"}}>'Tailwind'</span>],
+<br/>  flowState: <span style={{color: 'var(--primary)'}}>true</span>
 <br/>{'}'};
                  </code>
                </pre>
