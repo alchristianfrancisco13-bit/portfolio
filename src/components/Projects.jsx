@@ -8,8 +8,8 @@ const Projects = () => {
       title: 'iManage SDO',
       subtitle: 'Schools Division Office Management System',
       desc: 'A web-based document and management system designed for the Schools Division Office (SDO) to optimize administrative operations, records handling, and departmental coordination.',
-      tags: ['React', 'Web App', 'Vercel', 'Management System', 'TailwindCSS'],
-      category: 'Enterprise Web Application',
+      tags: ['Capstone Project', 'React', 'Vercel', 'SDO System', 'TailwindCSS'],
+      category: 'Capstone Project',
       badge: '🟢 Live on Vercel',
       link: 'https://imanage-sdo.vercel.app/',
       github: 'https://github.com/alchristianfrancisco13-bit',
@@ -61,7 +61,7 @@ const Projects = () => {
           Featured <span className="gradient-text">Projects & Work</span>
         </h2>
         <p className="section-subtitle">
-          Real-world applications spanning enterprise management systems, interactive game design, and native mobile software.
+          Real-world applications spanning academic capstone systems, interactive game design, and native mobile software.
         </p>
       </div>
 
