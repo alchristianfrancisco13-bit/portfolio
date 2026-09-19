@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import './Certificates.css';
 
 const certificates = [
@@ -14,7 +14,7 @@ const certificates = [
     badge: 'Cisco Certified',
     instructor: 'Michael Angelo Agustin',
     certId: '9e34e462-60c6-40af-b76a-62a1fc13d02d',
-    image: '/certificates/cert-6-cisco-packet-tracer.png',
+    image: '/certificates/cert-6-cisco-packet-tracer.pdf',
     pdfFallback: '/certificates/cert-6-cisco-packet-tracer.pdf'
   },
   {
@@ -83,10 +83,13 @@ const Certificates = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [imgError, setImgError] = useState(false);
+  const [canvasRendered, setCanvasRendered] = useState(false);
+  const canvasRef = useRef(null);
 
   const openModal = (index = 0) => {
     setActiveIndex(index);
     setImgError(false);
+    setCanvasRendered(false);
     setModalOpen(true);
     document.body.style.overflow = 'hidden';
   };
@@ -94,22 +97,50 @@ const Certificates = () => {
   const closeModal = () => {
     setModalOpen(false);
     setImgError(false);
+    setCanvasRendered(false);
     document.body.style.overflow = '';
   };
 
   const goNext = useCallback(() => {
     setImgError(false);
+    setCanvasRendered(false);
     setActiveIndex((prev) => (prev + 1) % certificates.length);
   }, []);
 
   const goPrev = useCallback(() => {
     setImgError(false);
+    setCanvasRendered(false);
     setActiveIndex((prev) => (prev - 1 + certificates.length) % certificates.length);
   }, []);
 
   useEffect(() => {
     setImgError(false);
-  }, [activeIndex]);
+    setCanvasRendered(false);
+
+    const active = certificates[activeIndex];
+    const isPdf = active.image.endsWith('.pdf') || active.pdfFallback;
+
+    if (isPdf && modalOpen && window.pdfjsLib) {
+      const pdfUrl = active.image.endsWith('.pdf') ? active.image : active.pdfFallback;
+      window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+      window.pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
+        pdf.getPage(1).then(page => {
+          const canvas = canvasRef.current;
+          if (!canvas) return;
+          const viewport = page.getViewport({ scale: 2.0 });
+          canvas.height = viewport.height;
+          canvas.width = viewport.width;
+          const ctx = canvas.getContext('2d');
+          page.render({ canvasContext: ctx, viewport }).promise.then(() => {
+            setCanvasRendered(true);
+          });
+        });
+      }).catch(err => {
+        console.error('PDF.js render error:', err);
+      });
+    }
+  }, [activeIndex, modalOpen]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -126,17 +157,20 @@ const Certificates = () => {
 
   return (
     <section id="certificates" className="section container">
-      <div className="certificates-header-wrapper">
-        <h2 className="section-title">Certifications & Achievements</h2>
-        <p className="certificates-subtitle">
-          Verified academic and professional seminars, technical workshops, and industry credentials.
+      <div className="section-header-center">
+        <span className="section-tag">Credentials</span>
+        <h2 className="section-title">
+          Certifications & <span className="gradient-text">Achievements</span>
+        </h2>
+        <p className="section-subtitle">
+          Verified industry credentials, technical seminars, and academic summit participation. Click any button to inspect the official document.
         </p>
-        <div style={{ textAlign: 'center', marginTop: '1.5rem', marginBottom: '2.5rem' }}>
+        <div style={{ marginTop: '1.5rem' }}>
           <button 
             className="btn btn-primary main-view-all-btn"
             onClick={() => openModal(0)}
           >
-            <span style={{ fontSize: '1.2rem', marginRight: '8px' }}>📜</span>
+            <span style={{ fontSize: '1.1rem', marginRight: '6px' }}>📜</span>
             View All Certificates ({certificates.length})
           </button>
         </div>
@@ -214,12 +248,26 @@ const Certificates = () => {
 
             {/* Certificate Display Area */}
             <div className="cert-modal-body">
-              {activeCert.image.endsWith('.pdf') || (imgError && activeCert.pdfFallback) ? (
-                <iframe
-                  src={activeCert.pdfFallback || activeCert.image}
-                  title={activeCert.title}
-                  className="cert-modal-pdf"
-                />
+              {activeCert.image.endsWith('.pdf') ? (
+                <>
+                  <canvas
+                    ref={canvasRef}
+                    className="cert-modal-image"
+                    style={{
+                      display: canvasRendered ? 'block' : 'none',
+                      maxWidth: '100%',
+                      maxHeight: '60vh',
+                      objectFit: 'contain'
+                    }}
+                  />
+                  {!canvasRendered && (
+                    <iframe
+                      src={`${activeCert.image}#toolbar=0`}
+                      title={activeCert.title}
+                      className="cert-modal-pdf"
+                    />
+                  )}
+                </>
               ) : (
                 <img
                   className="cert-modal-image"

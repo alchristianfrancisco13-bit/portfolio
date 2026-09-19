@@ -66,20 +66,20 @@ const Skills = () => {
       name: 'Android Studio', 
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg',
       fallback: 'https://cdn.simpleicons.org/androidstudio/3DDC84' 
-    },
-    {
-      name: 'Vibe Coding',
-      icon: 'https://cdn.simpleicons.org/lightning/F7DF1E',
-      fallback: 'https://cdn.simpleicons.org/openai/10A37F'
     }
   ];
 
   return (
     <section id="skills" className="section container">
-      <h2 className="section-title">Technical Skills & Focus</h2>
-      <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginTop: '-1.5rem', marginBottom: '2.5rem', fontSize: '1rem' }}>
-        Specializing in modern <strong style={{ color: 'var(--primary)' }}>Front-End Development</strong>, responsive UI systems, and agile <strong style={{ color: 'var(--secondary)' }}>Vibe Coding</strong> workflows.
-      </p>
+      <div className="section-header-center">
+        <span className="section-tag">Tech Stack</span>
+        <h2 className="section-title">
+          Technologies & <span className="gradient-text">Development Stack</span>
+        </h2>
+        <p className="section-subtitle">
+          Specializing in modern <strong>Front-End Architecture</strong>, responsive UI systems, and full-stack web development.
+        </p>
+      </div>
       <div style={{
         display: 'flex',
         flexWrap: 'wrap',
