@@ -82,25 +82,34 @@ const certificates = [
 const Certificates = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [imgError, setImgError] = useState(false);
 
   const openModal = (index = 0) => {
     setActiveIndex(index);
+    setImgError(false);
     setModalOpen(true);
     document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     setModalOpen(false);
+    setImgError(false);
     document.body.style.overflow = '';
   };
 
   const goNext = useCallback(() => {
+    setImgError(false);
     setActiveIndex((prev) => (prev + 1) % certificates.length);
   }, []);
 
   const goPrev = useCallback(() => {
+    setImgError(false);
     setActiveIndex((prev) => (prev - 1 + certificates.length) % certificates.length);
   }, []);
+
+  useEffect(() => {
+    setImgError(false);
+  }, [activeIndex]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -205,9 +214,9 @@ const Certificates = () => {
 
             {/* Certificate Display Area */}
             <div className="cert-modal-body">
-              {activeCert.image.endsWith('.pdf') ? (
+              {activeCert.image.endsWith('.pdf') || (imgError && activeCert.pdfFallback) ? (
                 <iframe
-                  src={activeCert.image}
+                  src={activeCert.pdfFallback || activeCert.image}
                   title={activeCert.title}
                   className="cert-modal-pdf"
                 />
@@ -216,9 +225,9 @@ const Certificates = () => {
                   className="cert-modal-image"
                   src={activeCert.image}
                   alt={activeCert.title}
-                  onError={(e) => {
-                    if (activeCert.pdfFallback && e.target.src !== activeCert.pdfFallback) {
-                      e.target.src = activeCert.pdfFallback;
+                  onError={() => {
+                    if (activeCert.pdfFallback) {
+                      setImgError(true);
                     }
                   }}
                 />
@@ -246,7 +255,7 @@ const Certificates = () => {
               {/* Action buttons */}
               <div className="cert-modal-actions">
                 <a
-                  href={activeCert.image}
+                  href={activeCert.pdfFallback || activeCert.image}
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-outline cert-external-btn"
