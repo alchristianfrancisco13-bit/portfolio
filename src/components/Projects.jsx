@@ -42,14 +42,14 @@ const Projects = () => {
     {
       id: 4,
       title: 'Student E-Handbook',
-      subtitle: 'Android Mobile Application',
-      desc: 'A native mobile application developed in Android Studio using Java, giving students instant offline and online access to academic resources, university guidelines, and campus notices.',
-      tags: ['Android Studio', 'Java', 'Mobile App', 'Gradle'],
-      category: 'Mobile Application',
-      badge: '📱 Android Native',
-      link: 'https://github.com/alchristianfrancisco13-bit/Student-E-HandBook.git',
+      subtitle: 'BulSU Bustos Official Mobile App & Web Showcase',
+      desc: 'An official university mobile application and responsive web showcase for BulSU Bustos Campus students — providing instant offline and online access to academic guidelines, campus policies, and APK downloads.',
+      tags: ['Android Studio', 'Java', 'Web Portal', 'Vercel'],
+      category: 'Mobile App & Web Portal',
+      badge: '📱 Android & Web',
+      link: 'https://e-handbook-website.vercel.app/',
       github: 'https://github.com/alchristianfrancisco13-bit/Student-E-HandBook.git',
-      img: '/studentapp.png'
+      img: '/studentapp.png?v=2'
     }
   ];
 
