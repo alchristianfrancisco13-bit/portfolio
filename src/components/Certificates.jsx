@@ -43,6 +43,19 @@ const certificates = [
   },
   {
     id: 4,
+    title: 'BulSU TECHKNOWS: Data Analytics',
+    event: 'BulSU TECHKNOWS in partnership with Accenture Inc.',
+    institution: 'Bulacan State University & Accenture Inc.',
+    type: 'Certificate of Participation',
+    date: 'October 3, 2024',
+    category: 'Data Analytics',
+    icon: '📊',
+    badge: 'Accenture',
+    instructor: 'Florraine Fernandez-Ilanan',
+    image: '/certificates/cert-7-accenture-data-analytics.png'
+  },
+  {
+    id: 5,
     title: 'Machine Learning Seminar',
     event: '1st ASICS Summit — InnoVision: IT Insights for Tomorrow',
     institution: 'Bulacan State University',
@@ -54,7 +67,7 @@ const certificates = [
     image: '/certificates/cert-2-machine-learning.png'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Software Test Automation Seminar',
     event: '1st ASICS Summit — InnoVision: IT Insights for Tomorrow',
     institution: 'Bulacan State University',
@@ -66,7 +79,7 @@ const certificates = [
     image: '/certificates/cert-3-software-test.png'
   },
   {
-    id: 6,
+    id: 7,
     title: 'Cybersecurity Seminar',
     event: '1st ASICS Summit — InnoVision: IT Insights for Tomorrow',
     institution: 'Bulacan State University',
@@ -313,7 +326,7 @@ const Certificates = () => {
               </div>
             </div>
 
-            {/* Quick Thumbnails / Tabs for all 6 certificates */}
+            {/* Quick Thumbnails / Tabs for all certificates */}
             <div className="cert-modal-thumbnails">
               {certificates.map((c, i) => (
                 <button

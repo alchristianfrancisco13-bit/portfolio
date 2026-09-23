@@ -65,7 +65,7 @@ const About = () => {
           
           <div className="profile-details">
             <h3>Al Christian V. Francisco</h3>
-            <p className="profile-tagline">Web Developer Intern & Front-End Craftsman</p>
+            <p className="profile-tagline">Web Developer & Front-End Craftsman</p>
             <p className="profile-bio-text">
               An Information Technology student majoring in Web and Mobile Application Development at Bulacan State University - Bustos Campus. 
               I design and build dynamic, responsive web interfaces with strong attention to micro-interactions, 
@@ -74,7 +74,7 @@ const About = () => {
             <div className="profile-chips">
               <span className="profile-chip">📍 San Ildefonso, Bulacan</span>
               <span className="profile-chip">🎓 BulSU Bustos Campus</span>
-              <span className="profile-chip">💼 Web Dev Intern</span>
+              <span className="profile-chip">💼 Web Developer</span>
               <span className="profile-chip">🚀 Open for Opportunities</span>
             </div>
           </div>

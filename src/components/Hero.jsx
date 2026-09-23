@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="hero-content animate-fade-in">
           <div className="status-indicator">
             <span className="status-ping"></span>
-            Available for Internship & Web Dev Projects
+            Available for Web Dev Projects & Opportunities
           </div>
 
           <h2 className="hero-greeting">Hi, I am</h2>
@@ -23,7 +23,7 @@ const Hero = () => {
           <div className="hero-role-wrapper">
             <span className="role-title">Front-End Developer</span>
             <span className="role-separator">•</span>
-            <span className="role-sub">Web Developer Intern</span>
+            <span className="role-sub">Web Developer</span>
           </div>
 
           <p className="hero-bio">
@@ -117,7 +117,7 @@ const Hero = () => {
                     <span className="c-comment">// Al Christian V. Francisco — Front-End Developer</span><br/>
                     <span className="c-keyword">const</span> <span className="c-var">frontEndDev</span> = {'{'}<br/>
                     &nbsp;&nbsp;<span className="c-prop">name</span>: <span className="c-string">'Al Christian V. Francisco'</span>,<br/>
-                    &nbsp;&nbsp;<span className="c-prop">role</span>: <span className="c-string">'Front-End Developer / Intern'</span>,<br/>
+                    &nbsp;&nbsp;<span className="c-prop">role</span>: <span className="c-string">'Front-End & Web Developer'</span>,<br/>
                     &nbsp;&nbsp;<span className="c-prop">education</span>: <span className="c-string">'BSIT @ BulSU Bustos'</span>,<br/>
                     &nbsp;&nbsp;<span className="c-prop">specialization</span>: <span className="c-string">'Responsive UI & Modern Web'</span>,<br/>
                     &nbsp;&nbsp;<span className="c-prop">coreSkills</span>: [<br/>
@@ -135,10 +135,10 @@ const Hero = () => {
                     <span className="c-comment">// Verified Metrics & Achievements</span><br/>
                     {'{'}<br/>
                     &nbsp;&nbsp;<span className="c-prop">"completedProjects"</span>: <span className="c-num">6</span>,<br/>
-                    &nbsp;&nbsp;<span className="c-prop">"verifiedCertificates"</span>: <span className="c-num">6</span>,<br/>
+                    &nbsp;&nbsp;<span className="c-prop">"verifiedCertificates"</span>: <span className="c-num">7</span>,<br/>
                     &nbsp;&nbsp;<span className="c-prop">"ciscoCertification"</span>: <span className="c-string">"Packet Tracer"</span>,<br/>
                     &nbsp;&nbsp;<span className="c-prop">"asicsSummit"</span>: <span className="c-string">"AI & Machine Learning"</span>,<br/>
-                    &nbsp;&nbsp;<span className="c-prop">"currentFocus"</span>: <span className="c-string">"Internship & Front-End UI"</span><br/>
+                    &nbsp;&nbsp;<span className="c-prop">"currentFocus"</span>: <span className="c-string">"Modern Web & Front-End UI"</span><br/>
                     {'}'}
                   </code>
                 </pre>
@@ -153,7 +153,7 @@ const Hero = () => {
               </div>
               <div className="terminal-divider"></div>
               <div className="terminal-metric">
-                <span className="metric-val">6</span>
+                <span className="metric-val">7</span>
                 <span className="metric-lbl">Certifications</span>
               </div>
               <div className="terminal-divider"></div>

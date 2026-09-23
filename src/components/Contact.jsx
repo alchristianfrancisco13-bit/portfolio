@@ -17,7 +17,7 @@ const Contact = () => {
           Let's Build Something <span className="gradient-text">Exceptional</span>
         </h2>
         <p className="section-subtitle">
-          Whether you have an internship opportunity, a project to collaborate on, or simply want to connect, my inbox is always open.
+          Whether you have a project to collaborate on, a new opportunity, or simply want to connect, my inbox is always open.
         </p>
       </div>
 

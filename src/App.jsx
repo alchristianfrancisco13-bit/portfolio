@@ -30,7 +30,7 @@ function App() {
               Al Christian V. Francisco
             </p>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-dim)', marginTop: '0.2rem' }}>
-              Front-End Developer & Web Developer Intern • Built with React 19 & Clean Architecture.
+              Front-End & Web Developer • Built with React 19 & Clean Architecture.
             </p>
           </div>
           <div style={{ display: 'flex', gap: '1.75rem', fontSize: '0.88rem', alignItems: 'center' }}>
