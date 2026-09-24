@@ -3,6 +3,20 @@ import './Certificates.css';
 
 const certificates = [
   {
+    id: 8,
+    title: 'Orientation on the Student Internship Program',
+    event: 'Student Internship Program Orientation (CARDSIS)',
+    institution: 'Bulacan State University - Main Campus',
+    type: 'Certificate of Participation',
+    date: 'September 24, 2026',
+    category: 'Internship',
+    icon: '🎓',
+    badge: 'SIP Orientation',
+    instructor: 'Ramon M. Lazaro, MAEd & Joseph Roy F. Celestino',
+    image: '/certificates/cert-8-internship-orientation.pdf',
+    pdfFallback: '/certificates/cert-8-internship-orientation.pdf'
+  },
+  {
     id: 1,
     title: 'Getting Started with Cisco Packet Tracer',
     event: 'Cisco Networking Academy Program',

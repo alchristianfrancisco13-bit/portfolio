@@ -135,7 +135,7 @@ const Hero = () => {
                     <span className="c-comment">// Verified Metrics & Achievements</span><br/>
                     {'{'}<br/>
                     &nbsp;&nbsp;<span className="c-prop">"completedProjects"</span>: <span className="c-num">6</span>,<br/>
-                    &nbsp;&nbsp;<span className="c-prop">"verifiedCertificates"</span>: <span className="c-num">7</span>,<br/>
+                    &nbsp;&nbsp;<span className="c-prop">"verifiedCertificates"</span>: <span className="c-num">8</span>,<br/>
                     &nbsp;&nbsp;<span className="c-prop">"ciscoCertification"</span>: <span className="c-string">"Packet Tracer"</span>,<br/>
                     &nbsp;&nbsp;<span className="c-prop">"asicsSummit"</span>: <span className="c-string">"AI & Machine Learning"</span>,<br/>
                     &nbsp;&nbsp;<span className="c-prop">"currentFocus"</span>: <span className="c-string">"Modern Web & Front-End UI"</span><br/>
@@ -153,7 +153,7 @@ const Hero = () => {
               </div>
               <div className="terminal-divider"></div>
               <div className="terminal-metric">
-                <span className="metric-val">7</span>
+                <span className="metric-val">8</span>
                 <span className="metric-lbl">Certifications</span>
               </div>
               <div className="terminal-divider"></div>
